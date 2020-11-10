@@ -17,4 +17,3 @@ int main()
 	TinhTong(n);
 	return 0;
 }
-
