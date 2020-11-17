@@ -1,12 +1,14 @@
 #include<stdio.h>
 
-void lietke(int n)
+int TichLe(int n)
 {
-  for (int i = 1; i <= n; i++)
+  int nhan = 1;
+  for (int i = 1; i <= n; i++ )
   {
     if(n % i == 0 && i % 2 != 0)
-      printf("%d ",i);
+      nhan *= i;
   }
+  return nhan;
 }
 
 void nhap(int &n)
@@ -19,6 +21,6 @@ int main()
 {
   int n;
   nhap(n);
-  lietke(n);
+  printf("Tich cac uoc so le bang : %d",TichLe(n));
   return 0;
 }
